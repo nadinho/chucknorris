@@ -1,8 +1,16 @@
 import React from 'react';
+import styled from '@emotion/styled';
 import GlobalStyles from './Globalstyles';
 import SpeechBubble from './components/SpeechBubble';
-import Button from './components/Button';
-// import getQuote from './components/QuoteApi';
+// import Button from './components/Button';
+import chuck from './assets/chuck-norris-4.png';
+
+const Chuck = styled.img`
+  height: 400px;
+  position: fixed;
+  bottom: 0px;
+  cursor: pointer;
+`;
 
 function App() {
   const [quote, setQuote] = React.useState([]);
@@ -23,7 +31,7 @@ function App() {
       <GlobalStyles />
 
       <SpeechBubble>{quote}</SpeechBubble>
-      <Button onClick={getQuote}>Go</Button>
+      <Chuck src={chuck} alt="Chuck Norris" onClick={getQuote} />
     </>
   );
 }

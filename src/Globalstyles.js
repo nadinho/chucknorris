@@ -1,6 +1,5 @@
 import React from 'react';
 import { Global, css } from '@emotion/core';
-import Wallpaper from './assets/chuck-norris-wallpaper.jpg';
 
 export default function GlobalStyles() {
   return (
@@ -16,8 +15,7 @@ export default function GlobalStyles() {
           height: 100vh;
           font-size: 1.5rem;
           color: white;
-          background-image: url(${Wallpaper});
-          background-size: cover;
+          background-color: black;
         }
       `}
     />
