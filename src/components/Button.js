@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-const BTN = styled.button`
+const Button = styled.button`
   width: 150px;
   height: 65px;
   background: darkgreen;
@@ -11,4 +11,4 @@ const BTN = styled.button`
   border-radius: 20px;
 `;
 
-export default BTN;
+export default Button;
